@@ -2,7 +2,7 @@
  * Import variables
  */
 
-@import "variables";
+@import "variables" ;
 
 /**
  * Import npm dependencies
@@ -10,11 +10,7 @@
  * see commented examples below
  */
 
-/* PARA PODER USAR LAS FUENTES FONTAWESOME EN CUALQUIERA 
-DE LAS PAGINAS DEL SITIO, APARTE DE AÑADIR LA DEPENDENCIA AL 
-PROYECTO ES NECESARIO REALIZAR UNA IMPORTACIÓN DE LAS FUENTES */
-
- @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.css" ;
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
