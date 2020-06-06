@@ -32,3 +32,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-lineargradiant{
+    background-color:linear-gradient(to bottom, rgb(63, 16, 59) 0%, rgb(173, 189, 253) 68%, rgba(188,224,238,1) 100%);
+}
+
+@tailwind screens;
+
+/* SE VAN A GENERAR UNA SERIE DE CLASES 
+VARIANTES PERSONALIZADAS */
+
+
+

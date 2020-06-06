@@ -5,10 +5,281 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+
+
     <title>TEATRO - ESPECIAL</title>
 </head>
 
 <body>
+
+    <!-- SE A DEFINIR EL ENCABEZADO DE LAS PAGINAS
+EN EL SE VAN A ENCONTRAR DOS IMAGENES Y UN MENU DE
+NAVEGACION -->
+    <div class="grid cols-5 bg-blue-500">
+        <div class="col-start-1 col-span-1 p-2">
+            <a href="./index.html"><img src="./assets/images/ICONOMASCARA.webp"
+                    class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
+            <a href="./index.html"><img src="./assets/images/ZHAODIBUJO.webp"
+                    class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
+        </div>
+        <div class="col-start-2 col-span-1">
+
+        </div>
+        <div class="col-start-3 col-span-3 pt-10">
+            <ul class="flex flex-wrap text-white font-bold justify-end text-lg">
+                <li class="mr-8">
+                    <a class="hover:text-blue-200" href="./index.html">Inicio</a>
+                </li>
+                <li class="mr-8">
+                    <a class="hover:text-blue-200" href=" ./miembros.html">Miembros</a>
+                </li>
+                <li class="mr-8">
+                    <a class="hover:text-blue-200" href=" ./informaciion.html">Información</a>
+                </li>
+                <li class="mr-8">
+                    <a class="hover:text-blue-200" href=" ./especial.html">Especial</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--===================================== CUERPO DE PAGINA ========================  
+    SE VA A MOSTRAR UN COMPONENTE DE TIPO ACORDEON, PERO REALMENTE NO ES COMPONENTE DE
+    TAILWIND, PUESTO QUE ESTE NO TIENE COMPONENTES, 
+    -->
+
+
+    <div class="w-full md:w-3/5 mx-auto p-8">
+        <h1 class="font-serif text-blue-400 text-2xl">Datos Especiales</h1>
+        <div class="shadow-md">
+            <div class="tab w-full overflow-hidden border-t bg-blue-600 text-white">
+                <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">
+                    <i class="fas fa-images"></i> PASE DE DIAPOSITIVAS</label>
+                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal">
+                    <div class="carousel relative shadow-2xl bg-white">
+                        <div class="carousel-inner relative overflow-hidden w-full">
+                            <!--DIAPOSITIVA 1-->
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
+                                hidden="" checked="checked">
+                            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                                <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">
+                                    <img src="./assets/images/ZHAODIBUJO.webp" class="d-block mx-auto" alt="...">
+                                </div>
+                            </div>
+                            <label for="carousel-3"
+                                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-2"
+                                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                            <!--DIAPOSITIVA 2-->
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                                <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">
+                                    <img src="./assets/images/ZHAOPRINCIPAL.webp" class="d-block mx-auto" alt="...">
+                                </div>
+                            </div>
+                            <label for="carousel-1"
+                                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-3"
+                                class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                            <!--DIAPOSITIVA 3-->
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true"
+                                hidden="">
+                            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                                <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">
+                                    <img src="./assets/images/HUERFANO.webp" class="d-block mx-auto" alt="...">
+                                </div>
+                            </div>
+                            <label for="carousel-2"
+                                class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                            <label for="carousel-1"
+                                class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                            <!-- INDICADORES DE PASO DE DIAPOSIRIVAS-->
+                            <ol class="carousel-indicators">
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-1"
+                                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                                </li>
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-2"
+                                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                                </li>
+                                <li class="inline-block mr-3">
+                                    <label for="carousel-3"
+                                        class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t bg-blue-600 text-white">
+                <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two">
+                    <i class="fas fa-video"></i> RELACIÓN DE VIDEOS</label>
+                <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                    <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/R33ObcJG148"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/QHEmxhR2VZM"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tab w-full overflow-hidden border-t bg-blue-600 text-white">
+                <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+                <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">
+                    <i class="fas fa-address-card"></i> FORMULARIO NETLIFY</label>
+                <div class="tab-content overflow-hidden border-l-2  border-indigo-500 leading-normal">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <div class="mx-auto container">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="font-sans text-xl font-bold">Nombre:</label>
+                                </div>
+                                <div class="col">
+                                    <input class="w-64" type="text" name="name" />
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="font-sans text-xl font-bold">E-mail:</label>
+                                </div>
+                                <div class="col">
+                                    <input class="w-64" type="email" name="email" />
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="font-sans text-xl font-bold">Estudios:</label>
+                                </div>
+                                <div class="col">
+                                    <select class="w-64" name="estudios[]" multiple>
+                                        <option value="licenciado">Licenciado</option>
+                                        <option value="Diplomado">Diplomado</option>
+                                        <option value="FPS">FP Superior</option>
+                                        <option value="FPM">FP Media</option>
+                                        <option value="FPB">FP Básica</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="font-sans text-xl font-bold">Mensaje:</label>
+                                </div>
+                                <div class="col">
+                                    <textarea class="w-64" name="message"></textarea>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+
+                                </div>
+                                <div class="col">
+                                    <button class="w-64 formsButton" type="submit">Enviar</button>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==================================== PIE DE PAGINA ============================
+SE VA A CREAR EL PIE DE PÁGINA
+DIVIDIDO EN UNA SECCIÓN DE CONTACTOS
+UNA SECCION MEDIA DE MENU QUE A SU VEZ
+ESTA DIVIDIDA EN TRES CELDAS Y FINALMENTE UNA 
+SECCIÓN DE EMPRESA QUE VA A ESTAR
+EN LA PARTE INFERIOR -->
+
+
+    <div class="grid grid-cols-4 bg-blue-200">
+        <div class="col-start-1 col-span-4 bg-blue-800 text-center text-white text-bold">
+            <p>Se puede poner aquí TODO TIPO DE CONTACTOS que sean <a href="especial.html">opciones</a> de
+                contactos</p>
+        </div>
+        <div class="col-start-1 col-span-1 bg-blue-400 p-4">
+            <a href="./index.html"><img src="./assets/images/ICONOMASCARA.webp"
+                    class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
+            <a href="./index.html"><img src="./assets/images/ZHAODIBUJO.webp"
+                    class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
+        </div>
+        <div class="col-start-2 col-span-2 bg-blue-400 ">
+            <ul class="flex flex-wrap p-5 text-white font-bold justify-center text-lg ">
+                <li class=" mr-6">
+                    <a class="hover:text-blue-800" href="./index.html">Inicio</a>
+                </li>
+                <li class="mr-6">
+                    <a class="hover:text-blue-800" href=" ./miembros.html">Miembros</a>
+                </li>
+                <li class="mr-6">
+                    <a class="hover:text-blue-800" href=" ./informaciion.html">Información</a>
+                </li>
+                <li class="mr-6">
+                    <a class="hover:text-blue-800" href=" ./especial.html">Especial</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-start-4 col-span-1 bg-blue-400 text-center">
+            <!-- ZONA QUE ESTA A LA DERECHA DEL MENÚ DEL PIE Y QUE ETÁ ORIENTADA
+AL ACCESO MEDIANTE LOS ICONOS CORRESPONDIENTES A LAS REDES SOCIALES -->
+            <a href="https://twitter.com/?lang=es">
+                <img class="sm:w-1/4 md:w-10 lg:w-12 xl:w-12 inline-block" src="./assets/images/twitter.webp"
+                    alt="Twitter" />
+            </a>
+            <a href="https://www.facebook.com/">
+                <img class="sm:w-1/4 md:w-10 lg:w-12 xl:w-12 inline-block" src="./assets/images/faceboock.webp"
+                    alt="faceboock" />
+            </a>
+            <a href="https://www.instagram.com/?hl=es">
+                <img class="sm:w-1/4 md:w-10 lg:w-12 xl:w-12 inline-block" src="./assets/images/instagram.webp"
+                    alt="instagram" />
+            </a>
+            <a href="https://www.youtube.com/?gl=ES&hl=es">
+                <img class="sm:w-1/4 md:w-10 lg:w-12 xl:w-12 inline-block" src="./assets/images/youtube.webp"
+                    alt="youtube" />
+            </a>
+        </div>
+        <div class="col-start-1 col-span-1">
+            <img class="w-2/3" src="./assets/images/logo.png" alt="logitopo UOC" width="180px" height="50px">
+        </div>
+        <div class="col-start-2 col-span-3 text-blue-600 font-bold">
+            This wireframe has been created exclusively for its use within the “HTML and CSS Tools II” course at
+            the
+            UOC’s
+            Master Program in Web App and Website Development. Its reproduction and other uses are not
+            authorized. ©
+            April
+            2020 - Jordi Tarrida Checa and Universitat Oberta de Catalunya -Autor sitio: JAVIER ANTÓN MORAL
+        </div>
+    </div>
 
 </body>
 

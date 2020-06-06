@@ -19,3 +19,48 @@
 //   max-width: 300px;
 //   height: auto;
 // }
+
+//  INSTRUCCIONES DE ANIMACIONES PARA LA PAGINA PORTADA
+
+/* LA IMAGEN PRINCIPAL DE LA PAGINA VA A MOVERSE DE
+ABAJO A ARRIBA */
+.imagecard{
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-top: 100%;
+    margin-left: -50%;
+    width: 200%
+  }
+
+  to {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* LA IMAGEN QUE SUPONE EL TITULO DE ESTA
+PAGINA VA A MOVERSE DE ARRIBA A ABAJO */
+
+.titlecard{
+  animation-duration: 3s;
+  animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-top: -200%;
+    margin-left: -50%;
+    width: 200%
+  }
+
+  to {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+  }
+}

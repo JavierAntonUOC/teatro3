@@ -1,0 +1,52 @@
+// ESTILOS PARA LAS LISTAS
+
+.listNum{
+    /* SE VA A QUITAR EL ESTILO PREDEFINIDO DE LAS LISTAS
+    NUMERADAS, PARA PODER DEFINIR UNO NUEVO */
+    list-style-type: none;
+    /* SE CREA UN NUEVO OBJETO QUE SE VA A USAR COMO
+    EL FUTURO CONTADOR DE LA LISTA NUMERADA.
+    ADEMAS SE ESPECIFICA QUE SIEMPRE EL CONTADOR
+    EMPIECE DESDE EL PRINCIPIO */
+    counter-reset: lista-personalizada;
+    margin: 0;
+  }
+  
+  .listNum li{
+    position: relative;
+    line-height: 30px;
+    padding-left: 80px;
+  
+    /* SE VA A INVOCAR A LA FUNCIÓN QUE HEMOS DECLARADO
+    ARRIBA, PASANDOLE UN PARAMETRO, EL VALOR DE 
+    RETORUNO DE LA FUNCION SE LE VA A ASIGNAR A LA 
+    PROPIEDAD padding-right. REALMENTE NO ES UN 
+    EJEMPLO MUY INTERESANTE, PERO SIRVE PARA ENTENDER
+    EL USO DE FUNCIONES EN SASS */
+    padding-right:  numero(160) ; //  80px;
+    font-weight: bold;
+  }
+  
+  /* SE VAN A DEFINIR TODAS LAS CARACTERISTICAS
+  DE TODO LO QUE ESTÉ DELANTE DE LA LISTA, ES
+  DECIR, LAS VIÑETAS O NÚMEROS */
+  .listNum li:before{
+    /* SE ESTABLECE QUE EL OBJETO CREADO
+    ANTERIORMENTE lista-personalizada SEA UN
+    NUEVO CONTADOR */
+    content: counter(lista-personalizada);
+    /* SE DEFINE QUE SE PRODUZCA UN 
+    INCREMENTO DEL CONTADOR */
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    padding: 10px 15px 5px 15px;
+    background: rgb(0, 140, 255);
+    color: white;
+    height: 45px;
+    width: 45px;
+    // EL FONDO VA A SER CIRCULAR
+    border-radius: 50%; 
+  }

@@ -6,3 +6,26 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+/* DECLARACIÓN DE VARIABLES QUE CONTIENEN COLORES IMPORTANTES DEL SITIO */
+
+
+$bgHeader: linear-gradient(to bottom, rgb(114, 63, 110) 0%, rgb(241, 135, 13) 68%, rgb(99, 3, 67) 100%);
+
+$bgPage:linear-gradient(to bottom, rgb(63, 16, 59) 0%, rgb(133, 9, 122) 68%, rgb(99, 3, 67) 100%);
+
+$bgPageInf:linear-gradient(to bottom, rgb(63, 16, 59) 0%, rgb(74, 223, 250) 68%, rgb(18, 161, 172) 100%);
+
+$bgMenu: linear-gradient(to bottom, rgb(63, 16, 59) 0%, rgb(173, 189, 253) 68%, rgba(188,224,238,1) 100%);
+
+$bgMenuSel: linear-gradient(to bottom, rgb(109, 24, 134) 0%, rgb(88, 7, 112) 60%, rgba(181, 62, 218, 0.979) 100%);
+
+$bgFooter:linear-gradient(to bottom, rgb(118, 17, 138) 0%, rgb(70, 10, 82) 58%, rgb(41, 7, 48) 100%);
+
+
+/* UNA VEZ QUE SE HAN AGRAGADO LAS DEPENDENCIAS DE BOOTSTRAP EN NUESTRO PROYECTO
+SE PUEDEN CONTROLAR LAS CARACTERISTICAS DE LOS TEMAS */
+$theme-colors: (
+ "primary": rgb(134, 21, 209) 
+)
+
