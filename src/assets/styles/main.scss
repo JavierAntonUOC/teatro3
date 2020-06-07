@@ -31,11 +31,26 @@
  
 @tailwind base;
 @tailwind components;
+
+.cardMember{
+        @apply w-1/4 text-gray-700 text-center bg-blue-400 px-4 py-4 m-2 rounded-lg shadow-lg
+}
+
+.cardButton{
+        @apply px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg  
+}
+
+.cardButton:hover{
+        @apply bg-teal-500
+}
+
+.orderListParr{
+        @apply font-serif text-blue-400 text-xl p-4  
+}
+
 @tailwind utilities;
 
-.bg-lineargradiant{
-    background-color:linear-gradient(to bottom, rgb(63, 16, 59) 0%, rgb(173, 189, 253) 68%, rgba(188,224,238,1) 100%);
-}
+
 
 @tailwind screens;
 

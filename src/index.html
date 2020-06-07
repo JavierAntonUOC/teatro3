@@ -5,6 +5,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <!-- SE DEFINE EL ICONO QUE VA A APARECER EN LA SOLAPA
+  DE TITULO DE LA PAGINA -->
+  <link rel="icon" href="./assets/images/ZHAOICONO.webp" sizes="32x32" type="image/png">
+
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
   <title>TEATRO - PRINCIPAL</title>
 </head>
@@ -13,8 +18,19 @@
 
   <!-- SE A DEFINIR EL ENCABEZADO DE LAS PAGINAS
 EN EL SE VAN A ENCONTRAR DOS IMAGENES Y UN MENU DE
-NAVEGACION -->
+NAVEGACION. EL ENCABEZADO SE CONTRUYE MEDIANTE UNA REJILLA
+USANDO LAS CLASES DE UTILOIDAD DE TAILWIND. LA MAYORIA DE LOS
+NOMBRES DE ESTAS CLASES SON BASTANTE SIGNIFICATIVOS, DE MANERA
+QUE SE ENTIENDE FACILMENTE SU USO -->
+
+  <!-- REJILLA DE 5 COLUMNAS Y CON UN COLOR DE FONDO PREFRABRICADO
+DE AZUL CON UN NIVEL DE INTENSIDAD DE 500. LA INTENSIDAD PUEDE IR
+DE 100 HASTA 900 -->
   <div class="grid cols-5 bg-blue-500">
+
+    <!-- SE DEFINE QUE LA PRIMERA CELDA DE LA REJILLA COMIENZE EN LA LINEA
+    1 Y SALTE HASTA LA LINEA 1, ADEMÁS SE PONE UN PADDING TOTAL DE 2 QUE 
+  CORRESPONDE A 0,5rem-->
     <div class="col-start-1 col-span-1 p-2">
       <a href="./index.html"><img src="./assets/images/ICONOMASCARA.webp"
           class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
@@ -24,9 +40,17 @@ NAVEGACION -->
     <div class="col-start-2 col-span-1">
 
     </div>
+
+    <!-- SE VA A PONER UN PADDING TOP DE 10 -->
     <div class="col-start-3 col-span-3 pt-10">
+
+      <!-- LOS TAMAÑOS DE TEXTO ESTÁN PREDEFINIDOS EL LG CORRESPONDE
+      A 1,125rem -->
       <ul class="flex flex-wrap text-white font-bold justify-end text-lg">
         <li class="mr-8">
+
+          <!-- CUANDO EL PUNTERO DEL RATÓN SE PONE ENCIMA DEL VINCULO
+          EL TEXTO SE PONE EN AZUL CLARO -->
           <a class="hover:text-blue-200" href="./index.html">Inicio</a>
         </li>
         <li class="mr-8">
@@ -43,16 +67,24 @@ NAVEGACION -->
   </div>
 
   <!-- =========================================== CUERPO DE PAGINA ================================
-SE VA A CREAR EL CUERPO DE LA PAGINA PRINCIPAL
+SE VA A CREAR EL CUERPO DE LA PAGINA PRINCIPALBASADO EN OTRA REJILLA
 QUE POSEE DOS IMAGENES QUE POSTERIORMENTE VAN A ANIMARSE -->
 
   <div class="grid grid-cols-1 bg-blue-300">
-
+    <!-- SE HA AÑADIDO UNA CLASE AL FINAL PARA PODER ESPECIFICAR UN
+    ESTILO ESPECIFICO AL ELMENTO, CONSISTENTE EN UNA ANIMACIÓN -->
     <div class="col-start-1 col-span-1 imagecard">
+
+      <!-- ES POSIBLE DEFINIR LOS PUNTOS DE INTERRUPCIÓN Y LOS EFECTOS QUE PUEDEN CAUSAR
+      ESTOS PUNTOS DE INTERRUPCIÓN LOS HE DEFINIDO PERSONALMENTE EN EL FICHERO DE 
+      CONFIGURACIÓN DE TAILWIND (SM -PEQUEÑO, MD - MEDIANO, LG - GRANDE, XL - MUY GRANDE)-->
       <img class="sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/4 mx-auto p-5" src="./assets/images/ZHAOPRINCIPAL.webp"
         alt="foto central zhao">
     </div>
 
+    <!-- SE HA AÑADIDO UNA CLASE AL FINAL PARA PODER ESPECIFICAR UN
+    ESTILO ESPECIFICO AL ELMENTO, CONSISTENTE EN UNA ANIMACIÓN.
+    EL PADDING BOTTON SE HA PUESTO A 4 -->
     <div class="col-start-1 col-span-1 titlecard pb-4">
       <img class="sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/4 mx-auto p-5" src="./assets/images/textohuerfano2.webp"
         alt="Texto titulo cuerpo">
@@ -67,7 +99,7 @@ DIVIDIDO EN UNA SECCIÓN DE CONTACTOS
 UNA SECCION MEDIA DE MENU QUE A SU VEZ
 ESTA DIVIDIDA EN TRES CELDAS Y FINALMENTE UNA 
 SECCIÓN DE EMPRESA QUE VA A ESTAR
-EN LA PARTE INFERIOR -->
+EN LA PARTE INFERIOR. TODO ELLO ESTRUCTURADO MEDIANTE UN TERCER GRID -->
 
 
   <div class="grid grid-cols-4 bg-blue-200">
@@ -75,6 +107,8 @@ EN LA PARTE INFERIOR -->
       <p>Se puede poner aquí TODO TIPO DE CONTACTOS que sean <a href="especial.html">opciones</a> de contactos</p>
     </div>
     <div class="col-start-1 col-span-1 bg-blue-400 p-4">
+
+      <!-- SE PUEDEN ESPECIFICAR ANCHOS EN CONCRETO PARA LOS ELEMENTOS -->
       <a href="./index.html"><img src="./assets/images/ICONOMASCARA.webp"
           class="sm:w-8 md:w-10 lg:w-12 xl:w-12 inline-block"></a>
       <a href="./index.html"><img src="./assets/images/ZHAODIBUJO.webp"
@@ -82,6 +116,8 @@ EN LA PARTE INFERIOR -->
     </div>
     <div class="col-start-2 col-span-2 bg-blue-400 ">
       <ul class="flex flex-wrap p-5 text-white font-bold justify-center text-lg ">
+
+        <!-- SE ESPECIFICA EL VALOR DEL MARGEN DERECHO -->
         <li class=" mr-6">
           <a class="hover:text-blue-800" href="./index.html">Inicio</a>
         </li>
@@ -98,7 +134,9 @@ EN LA PARTE INFERIOR -->
     </div>
     <div class="col-start-4 col-span-1 bg-blue-400 text-center">
       <!-- ZONA QUE ESTA A LA DERECHA DEL MENÚ DEL PIE Y QUE ETÁ ORIENTADA
-        AL ACCESO MEDIANTE LOS ICONOS CORRESPONDIENTES A LAS REDES SOCIALES -->
+        AL ACCESO MEDIANTE LOS ICONOS CORRESPONDIENTES A LAS REDES SOCIALES.
+        ES POSIBLE ESPECIFICAR LOS ANCHOS MEDIANTE PROPORCIONES DEL ANCHO DE
+        LA PANTALLA O DEL CONTENEDOR -->
       <a href="https://twitter.com/?lang=es">
         <img class="sm:w-1/4 md:w-10 lg:w-12 xl:w-12 inline-block" src="./assets/images/twitter.webp" alt="Twitter" />
       </a>
@@ -115,6 +153,8 @@ EN LA PARTE INFERIOR -->
       </a>
     </div>
     <div class="col-start-1 col-span-1">
+
+
       <img class="w-2/3" src="./assets/images/logo.png" alt="logitopo UOC" width="180px" height="50px">
     </div>
     <div class="col-start-2 col-span-3 text-blue-600 font-bold">
